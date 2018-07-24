@@ -1,4 +1,4 @@
-package qa.localhost;
+package qa.localhostRest;
 
 import org.junit.Before;
 import org.junit.Ignore;
@@ -22,8 +22,8 @@ import org.json.JSONObject;
 
 
 
-public class testlocalhost {
-	
+public class localhostresttesting {
+
 	private RequestSpecification request;
 	private Response response;
 	
@@ -99,11 +99,11 @@ public class testlocalhost {
 	}
 
 
-}
-	
-	
-	
-	
-	
-	
 
+
+
+
+
+
+
+}
