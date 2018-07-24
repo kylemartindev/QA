@@ -2,7 +2,7 @@ package qa.testingapi;
 
 
 
-import org.junit.Test;
+
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -14,9 +14,9 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
+
 import static org.hamcrest.Matchers.*;
-import static io.restassured.module.jsv.JsonSchemaValidator.*;
+
 
 public class testapi {
 	
@@ -95,4 +95,10 @@ public class testapi {
 	
 	}
 	
+	@Then("^the Rated Field is equal to \"([^\"]*)\"$")
+	public void  the_Rated_Field_is_equal_to(String arg1) {
+		expect().body("Rated", equalTo(arg1));
+		
+		
+	}
 }
