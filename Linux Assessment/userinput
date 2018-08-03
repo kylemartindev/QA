@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Please enter a new username"
+read userinput
+
+id -u $userinput
+groups $userinput
+

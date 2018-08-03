@@ -1,0 +1,19 @@
+#!/bin/bash
+
+mkdir QACKyle
+
+cd QACKyle
+
+touch file1
+
+touch file2
+
+touch file3
+
+echo "HelloWorld " >> file3
+
+mkdir childDir
+
+cp file3 childDir/file3
+
+

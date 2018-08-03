@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "PLease enter a directory"
+read dir
+
+ls -1 | wc -l $dir
+ls -lt $dir
+ls -lSr $dir
+ls -lLr $dir
+
+
+
+

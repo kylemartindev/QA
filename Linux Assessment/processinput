@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ps -ef
+
+echo "Enter ProcessId"
+read ps
+
+sudo kill $ps
+

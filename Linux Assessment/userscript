@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo cut -d: -f1,3 /etc/passwd > users
+ls | egrep -E '\<[0]{1}\>' users && egrep -E '\<[1000]{4}\>' users | tee usersagain
+cat usersagain > users |column -t
+
